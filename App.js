@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Dimensions} from 'react-native';
 import MapView, { Polyline, Marker } from 'react-native-maps';
+import OrangeLine from './src/components/map/orange_line';
 
 export default function App() {
   return (
@@ -18,16 +19,7 @@ export default function App() {
       scrollEnabled={true}
       zoomTapEnabled={true} >
       <Marker coordinate={{latitude: 42.3315395702194,longitude: -71.09552322057385}} />
-      <Polyline
-		    coordinates={[
-			  { latitude: 42.3315395702194, longitude: -71.09552322057385 },
-			  { latitude: 42.33736939902165, longitude: -71.08927307004777 },
-			  { latitude: 42.34171690092204, longitude: -71.08340618309798 },
-			  { latitude: 42.34761115398272, longitude:  -71.07565245818402 },
-		]}
-		strokeColor="#000"
-		strokeWidth={6}
-	/>
+    <OrangeLine/>
   </MapView>
 </View>
   );

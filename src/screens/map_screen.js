@@ -1,25 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Dimensions} from 'react-native';
+
 import MapView, { Polyline, Marker } from 'react-native-maps';
-import OrangeLine from './src/components/map/orange_line';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { StyleSheet, Text, View, Dimensions} from 'react-native';
 
-const Stack = createNativeStackNavigator();
-
-const MyStack = () => {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name="Map"
-          component={MapScreen}
-          options={{ title: 'Welcome' }}
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
-};
+import OrangeLine from '../components/map/orange_line';
 
 const MapScreen = ({ navigation }) => {
   return (
@@ -56,4 +39,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default MyStack;
+export default MapScreen;

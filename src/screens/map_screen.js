@@ -1,10 +1,10 @@
 
-import MapView, { Polyline, Marker } from 'react-native-maps';
-import { StyleSheet, Text, View, Dimensions} from 'react-native';
+import MapView, { Marker } from 'react-native-maps';
+import { StyleSheet, View, Dimensions} from 'react-native';
 
 import OrangeLine from '../components/map/orange_line';
 
-const MapScreen = ({ navigation }) => {
+const MapScreen = () => {
   return (
     <View style={styles.container}>
       <MapView

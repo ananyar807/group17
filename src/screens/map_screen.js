@@ -1,12 +1,22 @@
-
+import * as React from 'react';
 import MapView, { Marker } from 'react-native-maps';
-import { StyleSheet, View, Dimensions} from 'react-native';
+import { StyleSheet, View, Dimensions, Text, Button } from 'react-native';
 
 import OrangeLine from '../components/map/orange_line';
 
-const MapScreen = () => {
+const MapScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
+      <Text>just text</Text>
+      <Text>just text2</Text>
+      <Text>just text3</Text>
+      <Text>just text4</Text>
+      <Button
+	title="button"
+	onPress={() =>
+	  navigation.navigate()
+	}
+      />
       <MapView
 	style={styles.map}
 	initialRegion={{

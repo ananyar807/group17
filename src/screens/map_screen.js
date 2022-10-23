@@ -22,9 +22,8 @@ const MapScreen = ({ navigation }) => {
 	zoomTapEnabled={true} >
 	<Marker coordinate={{latitude: 42.3315395702194,longitude: -71.09552322057385}} />
 	<OrangeLine/>
-	//<RedLine/>
-      </MapView>
-    </View>
+  </MapView>
+  </View>
   );
 }
 

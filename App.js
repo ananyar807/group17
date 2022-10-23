@@ -1,5 +1,6 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+let polyline = require('polyline');
 
 import MapScreen from './src/screens/map_screen';
 

@@ -3,20 +3,11 @@ import MapView, { Marker } from 'react-native-maps';
 import { StyleSheet, View, Dimensions, Text, Button } from 'react-native';
 
 import OrangeLine from '../components/map/orange_line';
+import RedLine from '../components/map/line';
 
 const MapScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text>just text</Text>
-      <Text>just text2</Text>
-      <Text>just text3</Text>
-      <Text>just text4</Text>
-      <Button
-	title="button"
-	onPress={() =>
-	  navigation.navigate()
-	}
-      />
       <MapView
 	style={styles.map}
 	initialRegion={{
@@ -31,6 +22,7 @@ const MapScreen = ({ navigation }) => {
 	zoomTapEnabled={true} >
 	<Marker coordinate={{latitude: 42.3315395702194,longitude: -71.09552322057385}} />
 	<OrangeLine/>
+	//<RedLine/>
       </MapView>
     </View>
   );
